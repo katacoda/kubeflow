@@ -50,7 +50,7 @@ data:
 
       @property
       def singleuser_image_spec(self):
-        image = 'gcr.io/kubeflow/tensorflow-notebook-cpu'
+        image = 'gcr.io/kubeflow/tensorflow-notebook-cpu:v1'
         if self.user_options.get('image'):
           image = self.user_options['image']
         return image
