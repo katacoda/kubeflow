@@ -169,7 +169,7 @@ metadata:
 subjects:
 - kind: ServiceAccount
   name: tf-job-dashboard
-  namespace: {{ .Release.Namespace }}
+  namespace: default
 roleRef:
   apiGroup: rbac.authorization.k8s.io
   kind: ClusterRole
